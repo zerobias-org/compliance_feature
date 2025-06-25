@@ -1,0 +1,10 @@
+id: {id}
+name: {name}
+description: {description}
+imageUrl: https://cdn.auditmation.io/logos/zerobias-{code}-compliance_feature.svg
+code: {code}
+externalId: {externalId}
+status: active
+tags: []
+aliases: []
+complianceFeatureTypes: []

@@ -1,0 +1,29 @@
+{
+  "name": "@zerobias-org/compliance_feature_type-zerobias",
+  "version": "1.0.16",
+  "description": "Artifact containing compliance feature types",
+  "author": "team@zerobias.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zerobias-org/compliance_feature.git",
+    "directory": "complianceFeatureTypes/"
+  },
+  "scripts": {
+    "nx:publish": "../scripts/publish.sh"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "index.yml"
+  ],
+  "auditmation": {
+    "dataloader-version": "4.0.31",
+    "import-artifact": "compliance_feature_type",
+    "package": "zerobias.compliance_feature_type"
+  },
+  "dependencies": {
+    "@auditlogic/vendor-zerobias": "^1.0.0"
+  }
+}
