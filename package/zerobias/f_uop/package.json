@@ -19,7 +19,8 @@
     "registry": "https://pkg.zerobias.org/"
   },
   "files": [
-    "index.yml"
+    "index.yml",
+    "elements.yml"
   ],
   "auditmation": {
     "dataloader-version": "3.4.5",
