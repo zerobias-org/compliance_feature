@@ -4,7 +4,7 @@ import path from 'path';
 import yaml from 'yaml';
 import { UUID, URL } from '@auditmation/types-core-js';
 
-const complianceContextTypes: string[] = [];
+const complianceFeatureTypes: string[] = [];
 
 function isKnownFileType(filename: string): boolean {
   return (filename.toLowerCase().endsWith('.yml') || filename.toLowerCase().endsWith('.json'));
@@ -39,7 +39,21 @@ async function readAndParseFile(file: string, fullPathFile: string): Promise<any
   throw new Error(`File type not supported: ${file}`);
 }
 
-function processPackageJson(packageFile: Record<string, any>, code: string, offerings: string[]): void {
+function processElements(elementsFile: Record<string, any>): void {
+  const elements = elementsFile.elements !== undefined && elementsFile.elements !== null ? elementsFile.elements
+    : new Error('elements.yml missing elements array.');
+  if (!Array.isArray(elements)) {
+    throw new Error('elements.yml elements should be an array.');
+  }
+
+  for (const element of elements) {
+    if (!(element.id || (element.standardAlias && element.elementAlias))) {
+      throw new Error(`elements.yml element item ${JSON.stringify(element)} must have either id or both standardAlias and elementAlias.`);
+    }
+  }
+}
+
+function processPackageJson(packageFile: Record<string, any>, code: string): void {
   let check: any = packageFile.name !== undefined && packageFile.name !== null && packageFile.name === `@zerobias-org/compliance_feature-zerobias-${code}`
     ? true : new Error('package.json missing name or not set to @zerobias-org/compliance_feature-zerobias-<code>');
 
@@ -59,16 +73,6 @@ function processPackageJson(packageFile: Record<string, any>, code: string, offe
       : new Error('package.json auditmation section missing dataloader-version');
   } else {
     throw new Error(`package.json missing auditmation section`);
-  }
-
-  if (offerings.length > 0) {
-    const dependencies = packageFile.dependencies !== undefined && packageFile.dependencies !== null ? packageFile.dependencies : {};
-    for (const offering of offerings) {
-      // if (dependencies[`@zerobias-org/compliance_feature-zerobias-${parent}`] === undefined
-      //   || dependencies[`@zerobias-org/compliance_feature-zerobias-${parent}`] === null) {
-      //   throw new Error(`package.json missing dependency for parent '@zerobias-org/compliance_feature-zerobias-${parent}'`);
-      // }
-    }
   }
 }
 
@@ -108,28 +112,24 @@ async function processIndexYml(indexFile: Record<string, any>): Promise<string> 
     }
   }
 
-  check = indexFile.complianceContextTypes !== undefined && indexFile.complianceContextTypes !== null ? indexFile.complianceContextTypes : [];
+  check = indexFile.complianceFeatureTypes !== undefined && indexFile.complianceFeatureTypes !== null ? indexFile.complianceFeatureTypes : [];
   if (!Array.isArray(check)) {
-    throw new Error('complianceContextTypes in index.yml needs to be an array');
+    throw new Error('complianceFeatureTypes in index.yml needs to be an array');
   }
 
-  for (const complianceContextType of check) {
-    if (typeof complianceContextType !== 'string') {
-      throw new Error('complianceContextTypes in index.yml needs to be a string[]');
+  for (const complianceFeatureType of check) {
+    if (typeof complianceFeatureType !== 'string') {
+      throw new Error('complianceFeatureTypes in index.yml needs to be a string[]');
     }
 
-    if (!complianceContextTypes.includes(complianceContextType)) {
+    if (!complianceFeatureTypes.includes(complianceFeatureType)) {
       throw new Error(
-        `complianceContextType ${complianceContextType} not a valid compliance feature type - {${Object.keys(complianceContextTypes).join(' | ')}`
+        `complianceFeatureType ${complianceFeatureType} not a valid compliance feature type - {${Object.keys(complianceFeatureTypes).join(' | ')}`
       );
     }
   }
  
   return code;
-}
-
-async function processOfferingsYml(offeringsFile: Record<string, any>): Promise<string[]> {
-  return [];
 }
 
 async function processArtifact(directory: string) {
@@ -153,13 +153,11 @@ async function processArtifact(directory: string) {
   }
 
   const code = await processIndexYml(indexYml);
-  const offeringsYml = await readAndParseFile('offerings.yml', path.join(directory, 'offerings.yml'));
   if (!indexYml) {
-    throw new Error('Unable to parse offerings.yml');
+    throw new Error('Unable to parse index.yml');
   }
 
-  const offerings = await processOfferingsYml(offeringsYml);
-  console.log('Validated offerings.yml');
+  console.log('Validated index.json');
   const checkPackageJson = await fs.lstat(path.join(directory, 'package.json'))
     .catch(() => undefined);
 
@@ -172,7 +170,7 @@ async function processArtifact(directory: string) {
     throw new Error('Unable to parse package.json');
   }
 
-  processPackageJson(packageJson, code, offerings);
+  processPackageJson(packageJson, code);
   console.log('Validated package.json');
   const checkNpmrc = await fs.lstat(path.join(directory, '.npmrc'))
     .catch(() => undefined);
@@ -182,14 +180,22 @@ async function processArtifact(directory: string) {
   }
 
   console.log('Validated .npmrc');
+  const checkElements = await fs.lstat(path.join(directory, 'elements.yml'))
+    .catch(() => undefined);
+
+  if (checkElements && checkElements.isFile()) {
+    const elementsYml = await readAndParseFile('elements.yml', path.join(directory, 'elements.yml'));
+    processElements(elementsYml);
+    console.log('Validated elements.yml');
+  }
 }
 
 (async () => {
   try {
-    const complianceContextTypesFile = (await fs.readFile(path.join(__dirname, '../complianceContextTypes/index.yml'))).toString();
-    const complianceContextTypesData = yaml.parse(complianceContextTypesFile);
-    complianceContextTypesData.complianceContextTypes
-      .forEach((complianceContextType: any) => complianceContextTypes.push(complianceContextType.name));
+    const complianceFeatureTypesFile = (await fs.readFile(path.join(__dirname, '../complianceFeatureTypes/index.yml'))).toString();
+    const complianceFeatureTypesData = yaml.parse(complianceFeatureTypesFile);
+    complianceFeatureTypesData.complianceFeatureTypes
+      .forEach((complianceFeatureType: any) => complianceFeatureTypes.push(complianceFeatureType.name));
 
     const directory = './';
     await processArtifact(directory);
