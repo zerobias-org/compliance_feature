@@ -1,7 +1,7 @@
 {
   "name": "@zerobias-org/compliance_feature-zerobias-f_2fa",
   "version": "1.0.0",
-  "description": "Two-Factor Authentication (2FA) compliance_feature artifact",
+  "description": "Two-Factor Authentication (2FA) compliance_feature artifact.",
   "author": "opignault@zerobias.com",
   "license": "ISC",
   "repository": {
