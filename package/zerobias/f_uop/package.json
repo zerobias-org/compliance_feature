@@ -1,0 +1,32 @@
+{
+  "name": "@zerobias-org/compliance_feature-zerobias-f_uop",
+  "version": "1.0.0",
+  "description": "Use of Plugins (for extended task and integration capabilities) compliance_feature artifact",
+  "author": "opignault@zerobias.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zerobias-org/compliance_feature.git",
+    "directory": "package/zerobias/f_uop/"
+  },
+  "scripts": {
+    "nx:publish": "../../../scripts/publish.sh",
+    "prepublishtest": "../../../scripts/prepublish.sh",
+    "correct:deps": "ts-node ../../../scripts/correctDeps.ts",
+    "validate": "ts-node ../../../scripts/validate.ts"
+  },
+  "publishConfig": {
+    "registry": "https://pkg.zerobias.org/"
+  },
+  "files": [
+    "index.yml"
+  ],
+  "auditmation": {
+    "dataloader-version": "3.4.5",
+    "import-artifact": "compliance_feature",
+    "package": "zerobias.f_uop.compliance_feature"
+  },
+  "dependencies": {
+    "@auditlogic/vendor-zerobias": "latest"
+  }
+}

@@ -1,0 +1,7 @@
+# You can specify either a standard alias and element alias or just an id
+# Example:
+# elements:
+#   - standardAlias: aicpa.soc2.2022.framework
+#     elementAlias: A1.2
+#   - id: 870cb798-bba7-465c-adcd-323003cbc2f9
+elements: []

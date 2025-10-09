@@ -19,11 +19,10 @@
     "registry": "https://pkg.zerobias.org/"
   },
   "files": [
-    "index.yml",
-    "elements.yml"
+    "index.yml"
   ],
   "auditmation": {
-    "dataloader-version": "4.0.31",
+    "dataloader-version": "3.4.5",
     "import-artifact": "compliance_feature",
     "package": "zerobias.f_2fa.compliance_feature"
   },
