@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   pull-request:
-    if: github.repository == 'zerobias-org/compliance_context'
+    if: github.repository == 'zerobias-org/compliance_feature'
     uses: zerobias-org/devops/.github/workflows/pull-request-target-reusable.yml@main
     secrets: inherit
     with:

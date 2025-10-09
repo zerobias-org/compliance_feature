@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/compliance_feature_type-zerobias",
-  "version": "1.0.16",
+  "version": "1.0.17-rc.1",
   "description": "Artifact containing compliance feature types",
   "author": "team@zerobias.com",
   "license": "ISC",

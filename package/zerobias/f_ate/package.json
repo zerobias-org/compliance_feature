@@ -1,0 +1,33 @@
+{
+  "name": "@zerobias-org/compliance_feature-zerobias-f_ate",
+  "version": "1.0.1-rc.1",
+  "description": "Automated Test Execution compliance_feature artifact",
+  "author": "opignault@zerobias.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zerobias-org/compliance_feature.git",
+    "directory": "package/zerobias/f_ate/"
+  },
+  "scripts": {
+    "nx:publish": "../../../scripts/publish.sh",
+    "prepublishtest": "../../../scripts/prepublish.sh",
+    "correct:deps": "ts-node ../../../scripts/correctDeps.ts",
+    "validate": "ts-node ../../../scripts/validate.ts"
+  },
+  "publishConfig": {
+    "registry": "https://pkg.zerobias.org/"
+  },
+  "files": [
+    "index.yml",
+    "elements.yml"
+  ],
+  "auditmation": {
+    "dataloader-version": "4.0.31",
+    "import-artifact": "compliance_feature",
+    "package": "zerobias.f_ate.compliance_feature"
+  },
+  "dependencies": {
+    "@auditlogic/vendor-zerobias": "latest"
+  }
+}
