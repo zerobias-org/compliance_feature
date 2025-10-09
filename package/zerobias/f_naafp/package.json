@@ -23,7 +23,7 @@
     "elements.yml"
   ],
   "auditmation": {
-    "dataloader-version": "3.4.5",
+    "dataloader-version": "4.0.31",
     "import-artifact": "compliance_feature",
     "package": "zerobias.f_naafp.compliance_feature"
   },
