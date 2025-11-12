@@ -1,12 +1,12 @@
 {
   "name": "@zerobias-org/compliance_feature-bundle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
       "name": "@zerobias-org/compliance_feature-bundle",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "license": "ISC",
       "dependencies": {
         "@zerobias-org/compliance_feature_type-zerobias": "1.0.17",
