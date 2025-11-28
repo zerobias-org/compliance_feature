@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/compliance_feature-zerobias-f_carm",
-  "version": "1.1.0",
+  "version": "1.1.0-rc.0",
   "description": "Change and Request Management compliance_feature artifact",
   "author": "opignault@zerobias.com",
   "license": "ISC",
