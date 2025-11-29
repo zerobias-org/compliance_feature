@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 8d335a4a-5b61-4d5c-b3a0-41cb28bb1e24 # Unique UUID
+name: Workload Isolation and Micro-Segmentation
+description: Limit lateral movement and enforce least privilege at network level. Example capabilities = (1) policy-based segmentation between workloads or namespaces; (2) identity-based access control, aka zero trust networking.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_wiams-compliance_feature.svg
+code: f_wiams
+externalId: Workload Isolation and Micro-Segmentation
+tags: []
+aliases: []
+links: []

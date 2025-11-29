@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 046b8889-25fb-4055-9f3b-9d86f9f8c11d # Unique UUID
+name: Risk Scoring and Prioritization
+description: Quantifies access risk based on exposure, privilege level, and resource sensitivity. Example capabilities = (1) risk scoring per user, role, or workload; (2) context-aware prioritization, e.g., sensitive data + privileged access.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_rsap-compliance_feature.svg
+code: f_rsap
+externalId: Risk Scoring and Prioritization
+tags: []
+aliases: []
+links: []

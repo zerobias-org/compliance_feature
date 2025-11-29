@@ -1,0 +1,10 @@
+# Product compliance feature specific to Falcon Platform
+id: d98bc392-a9eb-411b-939e-c2be0ac3c157 # Unique UUID
+name: Falcon Platform certification under the CBPR system
+description: CrowdStrike is certified by TrustArc under the Global Cross-Border Privacy Rules (CBPR) system, an international framework that promotes consistent, high standards for data protection across borders among participating jurisdictions. This certification further demonstrates our commitment to strong privacy safeguards and accountability in the handling of personal data (https://privacy.trustarc.com/privacy-seal/validation?rid=b45c6892-4d95-49b4-b288-402c82efc05a).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformcbpr-compliance_feature.svg
+code: f_fplatformcbpr
+externalId: Falcon Platform certification under the CBPR system
+tags: []
+aliases: []
+links: []

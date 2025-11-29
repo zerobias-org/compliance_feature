@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 09aaf5e6-7f72-4d48-89ac-987e939fed33 # Unique UUID
+name: Integration with Cloud Providers and SaaS Platforms (for IAM)
+description: Unifies identity and permission data across cloud providers and SaaS systems. Example capabilities = (1) IAM normalization across AWS IAM, Azure RBAC, and GCP IAM; (2) SaaS connectors for Okta, GitHub, Salesforce, etc.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_iwcpasp-compliance_feature.svg
+code: f_iwcpasp
+externalId: Integration with Cloud Providers and SaaS Platforms (for IAM)
+tags: []
+aliases: []
+links: []

@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 21ca5417-3fff-47e5-8431-5f3077b44b4e # Unique UUID
+name: Least Privilege Analysis
+description: Identifies over-privileged identities and recommends right-sizing of permissions. Example capabilities = (1) detect unused permissions based on activity logs; (2) suggest minimal IAM policies; (3) highlight admin or wildcard privileges.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_lpa-compliance_feature.svg
+code: f_lpa
+externalId: Least Privilege Analysis
+tags: []
+aliases: []
+links: []

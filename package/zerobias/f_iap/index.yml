@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: dd85ff12-b7fa-4045-85f0-143540debaa1 # Unique UUID
+name: Initial Access Prevention
+description: Proactively prevents adversaries from establishing initial access by continuously assessing identity risk and automatically securing identities. Uses real-time endpoint signals, threat intelligence, and AI to authenticate trusted identities and dynamically block threats.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_iap-compliance_feature.svg
+code: f_iap
+externalId: Initial Access Prevention
+tags: []
+aliases: []
+links: []

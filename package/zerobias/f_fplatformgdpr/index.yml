@@ -1,0 +1,12 @@
+# Product compliance feature specific to Falcon Platform
+id: b8755b2e-7024-43a3-be87-db54026b0629 # Unique UUID
+name: Falcon Platform support for GDPR
+description: CrowdStrike Falcon Platform adheres to the EU's and UK's General Data Protection Regulation (GDPR) requirements. The platform's capabilities, such as data encryption, access controls, and incident response, assist organizations in meeting GDPR requirements for data protection and breach notification (https://trust.crowdstrike.com/?itemUid=45220873-6e51-4dbb-b1b1-37d66ee9ef95&source=title).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformgdpr-compliance_feature.svg
+code: f_fplatformgdpr
+externalId: Falcon Platform support for GDPR
+tags: []
+aliases: []
+links:
+  implements:
+    - eu.gdpr.v1.framework

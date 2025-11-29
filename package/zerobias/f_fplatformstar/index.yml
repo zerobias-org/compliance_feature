@@ -1,0 +1,10 @@
+# Product compliance feature specific to Falcon Platform
+id: a533938d-a1de-4555-a466-8641b3a9df6a # Unique UUID
+name: Falcon Platform support for CSA STAR
+description: CrowdStrike Falcon Platform is listed in the Cloud Security Alliance (CSA) Security, Trust & Assurance Registry (STAR). The STAR registry is a publicly accessible registry that documents the security controls provided by various cloud computing offerings. CrowdStrike has completed the CSA Consensus Assessments Initiative Questionnaire (CAIQ) v4.0.1, which provides a set of questions a cloud consumer and cloud auditor may wish to ask of a cloud provider. The CAIQ enables cloud consumers to assess the security capabilities of cloud providers. The Falcon Platform attains both STAR Level 1 and STAR Level 2 within CSA STAR's public registry. CSA STAR Level 2 requires a third-party independent audit of CrowdStrike's implementation of CSA Cloud Controls Matrix (CCM) version 4.0 (https://cloudsecurityalliance.org/star/registry/, https://trust.crowdstrike.com/?itemUid=0a28ddf2-a4a5-4fad-8e51-f0fb7a5f7551&source=title).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformstar-compliance_feature.svg
+code: f_fplatformstar
+externalId: Falcon Platform support for CSA STAR
+tags: []
+aliases: []
+links: []

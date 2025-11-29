@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 7c85fe5e-bba1-4717-b2bf-cdf82e322cd9 # Unique UUID
+name: Modern Secure Privileged Access
+description: Enforces just-in-time access and eliminates standing privileges. Automatically provisions privileged access when needed and revokes it immediately after, minimizing the identity attack surface. Delivers continuous, risk-based access control by assessing and enforcing privileges based on real-time risk to ensure users and devices have the exact privileges they need.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_mspa-compliance_feature.svg
+code: f_mspa
+externalId: Modern Secure Privileged Access
+tags: []
+aliases: []
+links: []

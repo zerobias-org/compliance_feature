@@ -1,0 +1,10 @@
+# Product compliance feature specific to Falcon Platform
+id: 06c55ed8-0f53-4788-8deb-e77f0a6153a1 # Unique UUID
+name: Falcon Platform authorization for DoD
+description: CrowdStrike Falcon Platform has been granted Provisional Authorizations (PA) by the DISA, meeting compliance with DoD standards to operate at and up to Impact Level 5 (IL5). This authorization allows DoD agencies and supporting organizations to use CrowdStrike without having to go through additional time and effort to vet and approve necessary security controls (https://public.cyber.mil/dccs/).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformdod-compliance_feature.svg
+code: f_fplatformdod
+externalId: Falcon Platform authorization for DoD
+tags: []
+aliases: []
+links: []

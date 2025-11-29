@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/compliance_feature-zerobias-f_sqlip",
-  "version": "1.0.1",
+  "version": "1.1.0-rc.0",
   "description": "SQL Injection Prevention compliance_feature artifact",
   "author": "opignault@zerobias.com",
   "license": "ISC",

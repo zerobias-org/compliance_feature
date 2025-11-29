@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: ef010db2-3b08-41a6-810c-cc12b58fc37f # Unique UUID
+name: Activity and Usage Analytics
+description: Correlates actual cloud activity with granted permissions to detect unused or risky access. Example capabilities = (1) audit log analysis, e.g., CloudTrail, Azure Activity Logs; (2) detect dormant or inactive accounts; (3) differentiate granted vs. exercised privileges.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_aaua-compliance_feature.svg
+code: f_aaua
+externalId: Activity and Usage Analytics
+tags: []
+aliases: []
+links: []

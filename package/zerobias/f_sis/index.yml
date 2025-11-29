@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 1930f8ca-95ca-43e6-ada9-f6bf0416837d # Unique UUID
+name: SaaS Identity Security
+description: Secures identities across SaaS applications by providing visibility into SaaS identity configurations, user activities, and access patterns. Detects and remediates identity risks specific to SaaS environments, such as excessive privileges, misconfigurations, and anomalous user behaviour.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_sis-compliance_feature.svg
+code: f_sis
+externalId: SaaS Identity Security
+tags: []
+aliases: []
+links: []

@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 61104ae7-da14-4fde-9c16-f9f43855c9c5 # Unique UUID
+name: Access Anomaly Detection
+description: Monitors for suspicious or abnormal access behavior. Example capabilities = (1) alert on impossible travel, unusual API usage, cross-region access, privilege escalation attempts; (2) detect use of unused privileged permissions.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_aad-compliance_feature.svg
+code: f_aad
+externalId: Access Anomaly Detection
+tags: []
+aliases: []
+links: []

@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 0f4457c9-2235-4191-b764-d94f3b5c4a29 # Unique UUID
+name: Policy Simulation and What-If Analysis
+description: Simulates policy changes to evaluate impact on access and risk before deployment. Example capabilities = (1) what-if scenarios for IAM policy updates; (2) simulate least privilege enforcement without breaking functionality.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_psawia-compliance_feature.svg
+code: f_psawia
+externalId: Policy Simulation and What-If Analysis
+tags: []
+aliases: []
+links: []

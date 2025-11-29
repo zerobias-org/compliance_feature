@@ -1,0 +1,13 @@
+# Product compliance feature specific to Falcon Platform
+id: c9def029-9b63-46af-9371-89143088df83 # Unique UUID
+name: Falcon Platform support for HIPAA
+description: CrowdStrike Falcon Platform helps healthcare organizations meet Health Insurance Portability and Accountability Act (HIPAA) requirements by providing robust security features that protect electronic protected health information (ePHI). The platform's capabilities, such as threat detection, incident response, and continuous monitoring, align with HIPAA's Security Rule standards for safeguarding ePHI (https://trust.crowdstrike.com/?product=crowdstrike&itemUid=c41ff7d5-98e7-4d79-9594-fd8ef93a2838&source=title).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformhipaa-compliance_feature.svg
+code: f_fplatformhipaa
+externalId: Falcon Platform support for HIPAA
+tags: []
+aliases: []
+links:
+  implements:
+    - us.hipaa.v2013.framework
+    - us.hipaa.v2.framework

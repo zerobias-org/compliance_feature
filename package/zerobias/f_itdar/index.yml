@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: ca7359dd-b51e-436d-8582-46a829656510 # Unique UUID
+name: Identity Threat Detection and Response
+description: Continuously monitors identity activity to detect and respond to identity-based threats in real-time. Leverages behavioural analytics, machine learning, and threat intelligence to identify suspicious activities such as credential compromise, lateral movement, and privilege escalation. Provides automated response capabilities to contain and remediate identity threats quickly.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_itdar-compliance_feature.svg
+code: f_itdar
+externalId: Identity Threat Detection and Response
+tags: []
+aliases: []
+links: []

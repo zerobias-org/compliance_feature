@@ -1,0 +1,12 @@
+# Product compliance feature specific to Falcon Platform
+id: 47df33c1-86d2-46b7-81e4-cea62bb6ee81 # Unique UUID
+name: Falcon Platform compliance with SOC 2
+description: CrowdStrike is compliant with Service Organization Control 2 standards and provides Falcon Platform customers with a SOC 2 Type II report. The report addresses the suitability of design and the operating effectiveness of the controls. This attestation addresses service organization's controls relevant to security, availability, processing integrity, confidentiality, or privacy. See SOC 2 Type II Report for CrowdStrike Corporate Operations, as well as SOC 2 Type II Report for The Falcon Platform (https://trust.crowdstrike.com/?itemUid=7bfa66da-33ab-49de-8391-e329738a1ae9&source=title).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformsoc2-compliance_feature.svg
+code: f_fplatformsoc2
+externalId: Falcon Platform compliance with SOC 2
+tags: []
+aliases: []
+links:
+  implements:
+    - aicpa.soc2.2017.framework
