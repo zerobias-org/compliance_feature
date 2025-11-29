@@ -1,0 +1,12 @@
+# Product compliance feature specific to Falcon Platform
+id: a0b8c074-513c-4a2c-a25f-b159cc92049a # Unique UUID
+name: Falcon Platform certification to ISO/IEC 27001:2022
+description: CrowdStrike has been independently assessed and certified to the new ISO/IEC 27001:2022 standard, which reflects our commitment to safeguarding information, managing risks effectively, and adhering to global security standards (https://trust.crowdstrike.com/?itemUid=1fed9faa-4a87-427c-9a95-96b4d6bf66b7&source=title).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformiso27001-compliance_feature.svg
+code: f_fplatformiso27001
+externalId: Falcon Platform certification to ISO/IEC 27001:2022
+tags: []
+aliases: []
+links:
+  implements:
+    - iso.27001.2022a.framework

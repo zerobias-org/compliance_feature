@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: a94f0c25-ef65-49a1-919e-055c4b56ca24 # Unique UUID
+name: Containerized Workload Security
+description: Protect containerized workloads throughout their lifecycle. Example capabilities = (1) image scanning during build and deploy stages; (2) Kubernetes configuration audits i.r.t. RBAC and network policies; (3) runtime protection for containers and pods; (4) admission control to block risky deployments.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_cws-compliance_feature.svg
+code: f_cws
+externalId: Containerized Workload Security
+tags: []
+aliases: []
+links: []

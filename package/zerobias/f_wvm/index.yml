@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 06a3724f-32d0-444d-a8f3-0ac4f93d55c6 # Unique UUID
+name: Workload Vulnerability Management
+description: Continuous scanning and assessment of workload vulnerabilities. Example capabilities = (1) scanning of OS packages, libraries, and dependencies; (2) Container image scanning at build and registry; (3) integration with CI/CD pipelines for shift-left scanning; (4) CVE prioritization based on exploitability and exposure.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_wvm-compliance_feature.svg
+code: f_wvm
+externalId: Workload Vulnerability Management
+tags: []
+aliases: []
+links: []

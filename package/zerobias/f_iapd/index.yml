@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: c2811582-80df-47ec-827e-4f98b94901ef # Unique UUID
+name: Identity and Permission Discovery
+description: Continuous inventory of all identities (human, machine, service accounts) and their permissions across cloud accounts, containers, and SaaS integrations. Example capabilities = (1) enumerate IAM users, roles, groups, service principals, workloads; (2) map trust relationships and role assumptions; (3) detect shadow or unmanaged identities.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_iapd-compliance_feature.svg
+code: f_iapd
+externalId: Identity and Permission Discovery
+tags: []
+aliases: []
+links: []

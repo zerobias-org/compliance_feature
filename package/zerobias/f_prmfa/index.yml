@@ -1,0 +1,12 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 94861d96-3ae3-40e9-8c75-a655d4c96ce6 # Unique UUID
+name: Phishing-Resistant MFA
+description: Implements strong, phishing-resistant multi-factor authentication (MFA) methods to protect identities from credential theft and phishing attacks. Utilizes hardware-based tokens, biometric authentication, and FIDO2 standards to ensure secure and user-friendly authentication experiences.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_prmfa-compliance_feature.svg
+code: f_prmfa
+externalId: Phishing-Resistant MFA
+tags: []
+aliases: []
+links:
+  implements:
+    - fidoalliance.fido.v2.standard

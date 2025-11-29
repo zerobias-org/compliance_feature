@@ -1,0 +1,12 @@
+# Product compliance feature specific to Falcon Platform
+id: 899bd92e-3764-420a-aa0c-6fb46eddb147 # Unique UUID
+name: Falcon Platform support for NIST 800-53
+description: CrowdStrike Falcon Platform is effective in providing significant support for the NIST SP 800-53 Rev. 5 security controls and requirements. The Falcon Platform meets or supports implementing organizations with 10 Low Impact, 10 Medium Impact, and 10 High impact control families (https://www.crowdstrike.com/en-us/resources/reports/crowdstrike-falcon-nist-compliance/, https://trust.crowdstrike.com/?itemUid=6dc2e33e-13b5-48d4-9a97-8a77b113542f&source=title).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformnist80053-compliance_feature.svg
+code: f_fplatformnist80053
+externalId: Falcon Platform support for NIST 800-53
+tags: []
+aliases: []
+links:
+  implements:
+    - nist.80053.rev5.framework

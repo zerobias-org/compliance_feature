@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 86e41f24-8585-4e58-a698-b1614b41dce0 # Unique UUID
+name: Reporting and Compliance
+description: Provides reporting and attestation for audits and regulatory frameworks. Example capabilities = (1) access certification workflows; (2) compliance mapping; (3) executive dashboards and evidence export.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_rac-compliance_feature.svg
+code: f_rac
+externalId: Reporting and Compliance
+tags: []
+aliases: []
+links: []

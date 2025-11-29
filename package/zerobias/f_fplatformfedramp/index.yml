@@ -1,0 +1,12 @@
+# Product compliance feature specific to Falcon Platform
+id: d4b74dd7-efe8-440a-9ef6-cf9d881d9cf8 # Unique UUID
+name: Falcon Platform authorization under FedRAMP
+description: CrowdStrike Falcon Platform is authorized under the Federal Risk and Authorization Management Program (FedRAMP) at the High Impact Level. FedRAMP is a government-wide program that provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services. The Falcon Platform's FedRAMP authorization demonstrates that it meets stringent federal security requirements, making it suitable for use by U.S. government agencies and their contractors (https://marketplace.fedramp.gov/products/FR1807853629A, https://trust.crowdstrike.com/?itemUid=73045931-8cee-4b8a-bcc7-94373219e6a3&source=title).
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_fplatformfedramp-compliance_feature.svg
+code: f_fplatformfedramp
+externalId: Falcon Platform authorization under FedRAMP
+tags: []
+aliases: []
+links:
+  implements:
+    - gsa.fedramp.rev4.framework

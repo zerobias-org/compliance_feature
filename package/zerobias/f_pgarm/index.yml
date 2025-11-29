@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 111caed4-04bc-43b2-b6ea-ab2cd5fea7b0 # Unique UUID
+name: Permission Graph and Relationship Mapping
+description: Builds a graph model of all entities and relationships to visualize trust chains and escalation paths. Example capabilities = (1) graph of roles, policies, principals, and resources; (2) attack path simulation, e.g., 'this Lambda can assume this role to access S3'; (3) cross-account trust analysis.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_pgarm-compliance_feature.svg
+code: f_pgarm
+externalId: Permission Graph and Relationship Mapping
+tags: []
+aliases: []
+links: []

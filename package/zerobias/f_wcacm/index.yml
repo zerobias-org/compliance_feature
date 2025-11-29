@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 48dbec71-5186-4332-bcb6-673c4c0d2913 # Unique UUID
+name: Workload Configuration and Compliance Monitoring
+description: Monitors workload configurations against security best practices and compliance standards. Example capabilities = (1) detect misconfigurations in OS, containers, orchestration; (2) compliance checks for CIS Benchmarks, NIST, PCI-DSS; (3) drift detection from golden images.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_wcacm-compliance_feature.svg
+code: f_wcacm
+externalId: Workload Configuration and Compliance Monitoring
+tags: []
+aliases: []
+links: []

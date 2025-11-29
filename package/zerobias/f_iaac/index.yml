@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: f1301e7d-1e63-4cc2-9a54-f2164495c23e # Unique UUID
+name: Identity and Access Context
+description: Integrate workload security with identity permissions. Example capabilities = (1) map workloads to their IAM roles and permissions; (2) detect over-privileged workloads; (3) correlate workload activity with identity behavior.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_iaac-compliance_feature.svg
+code: f_iaac
+externalId: Identity and Access Context
+tags: []
+aliases: []
+links: []

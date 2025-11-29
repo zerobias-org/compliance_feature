@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: b7efc2c7-9449-4e99-be8a-09978c44e2e7 # Unique UUID
+name: Workload Visibility and Inventory
+description: Complete discovery of workloads across clouds and data centers. Example capabilities = (1) identify VMs, containers, serverless functions; (2) map workloads to owners, environments, and criticality; (3) maintain an up-to-date inventory.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_wvai-compliance_feature.svg
+code: f_wvai
+externalId: Workload Visibility and Inventory
+tags: []
+aliases: []
+links: []

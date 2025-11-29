@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: b16bef9b-4344-4382-bf1b-1c1a8a1f0eeb # Unique UUID
+name: Automated Remediation and Enforcement
+description: Automatically removes, disables, or adjusts risky permissions with approval workflows. Example capabilities = (1) auto-revocation of unused privileges; (2) automated remediation playbooks; (3) integration with SOAR or ticketing.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_arae-compliance_feature.svg
+code: f_arae
+externalId: Automated Remediation and Enforcement
+tags: []
+aliases: []
+links: []

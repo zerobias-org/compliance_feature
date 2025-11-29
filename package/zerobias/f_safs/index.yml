@@ -1,0 +1,10 @@
+# Generic compliance feature supported by one or more catalog segments
+id: 81f56d87-7be4-4bb3-8db8-ceb549b71548 # Unique UUID
+name: Serverless and Function Security
+description: Protect ephemeral, event-driven workloads. Example capabilities = (1) code and dependency scanning for functions; (2) runtime monitoring of function activity and API calls; (3) least-privilege enforcement for function permissions.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_safs-compliance_feature.svg
+code: f_safs
+externalId: Serverless and Function Security
+tags: []
+aliases: []
+links: []
