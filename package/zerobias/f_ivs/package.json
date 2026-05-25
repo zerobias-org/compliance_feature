@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/compliance_feature-zerobias-f_ivs",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Isolate vulnerable systems compliance_feature artifact",
   "author": "opignault@zerobias.com",
   "license": "ISC",
@@ -9,12 +9,6 @@
     "url": "git@github.com:zerobias-org/compliance_feature.git",
     "directory": "package/zerobias/f_ivs/"
   },
-  "scripts": {
-    "nx:publish": "../../../scripts/publish.sh",
-    "prepublishtest": "../../../scripts/prepublish.sh",
-    "correct:deps": "ts-node ../../../scripts/correctDeps.ts",
-    "validate": "ts-node ../../../scripts/validate.ts"
-  },
   "publishConfig": {
     "registry": "https://pkg.zerobias.org/"
   },
@@ -22,12 +16,13 @@
     "index.yml",
     "elements.yml"
   ],
-  "auditmation": {
-    "dataloader-version": "4.0.31",
+  "dependencies": {
+    "@auditlogic/vendor-zerobias": "latest"
+  },
+  "zerobias": {
+    "dataloader-version": "1.0.0",
     "import-artifact": "compliance_feature",
     "package": "zerobias.f_ivs.compliance_feature"
   },
-  "dependencies": {
-    "@auditlogic/vendor-zerobias": "latest"
-  }
+  "type": "module"
 }

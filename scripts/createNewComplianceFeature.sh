@@ -16,6 +16,7 @@ fi
 
 cp -r $BASE_DIR/../templates/* $BASE_DIR/../$FOLDER_PATH
 cp  $BASE_DIR/../.npmrc $BASE_DIR/../$FOLDER_PATH
+echo 'plugins { id("zb.content") }' > $BASE_DIR/../$FOLDER_PATH/build.gradle.kts
 
 sed -i "s/{code}/$FOLDER_NAME/g" $BASE_DIR/../$FOLDER_PATH/package.json
 

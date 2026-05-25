@@ -44,6 +44,12 @@ build/
 .lvimrc
 local.properties
 
+# Gradle / zbb
+.zbb-monorepo/
+.zbb-gradle/
+gradle-local.properties
+!gradle/wrapper/gradle-wrapper.jar
+
 # Eclipse
 .classpath
 .settings

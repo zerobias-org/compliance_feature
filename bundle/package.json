@@ -1,8 +1,8 @@
 {
   "name": "@zerobias-org/compliance_feature-bundle",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "All installable compliance_features",
-  "author": "team@auditmation.io",
+  "author": "team@zerobias.com",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -11,11 +11,6 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  },
-  "auditmation": {
-    "package": "bundle.all-compliance_features",
-    "import-artifact": "bundle",
-    "dataloader-version": "0.5.4"
   },
   "dependencies": {
     "@zerobias-org/compliance_feature_type-zerobias": "1.0.17",
@@ -160,5 +155,10 @@
     "@zerobias-org/compliance_feature-zerobias-f_woapm": "1.0.1",
     "@zerobias-org/compliance_feature-zerobias-f_xssp": "1.0.1",
     "@zerobias-org/compliance_feature-zerobias-f_zdp": "1.0.1"
+  },
+  "zerobias": {
+    "package": "bundle.all-compliance_features",
+    "import-artifact": "bundle",
+    "dataloader-version": "1.0.0"
   }
 }
