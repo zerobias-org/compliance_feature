@@ -1,16 +1,19 @@
+// settings.gradle.kts — compliance_feature monorepo
+//
+// Plugin resolution order: mavenLocal (for `publishToMavenLocal` dev builds
+// of build-tools) → GitHub Packages Maven → gradle plugin portal → mavenCentral.
+// Never via `includeBuild` of a sibling repo path: dev iteration goes through
+// `./gradlew publishToMavenLocal` from build-tools so CI and local resolve
+// the artifact the same way.
+
 pluginManagement {
-    val localBuildTools = file("../util/packages/build-tools")
-    if (localBuildTools.exists()) {
-        includeBuild(localBuildTools)
-    }
     repositories {
+        mavenLocal()
         maven {
             url = uri("https://maven.pkg.github.com/zerobias-org/util")
             credentials {
                 username = System.getenv("GITHUB_ACTOR") ?: "zerobias-org"
-                password = System.getenv("READ_TOKEN")
-                    ?: System.getenv("NPM_TOKEN")
-                    ?: System.getenv("GITHUB_TOKEN") ?: ""
+                password = System.getenv("READ_TOKEN") ?: System.getenv("NPM_TOKEN") ?: System.getenv("GITHUB_TOKEN") ?: ""
             }
         }
         gradlePluginPortal()
