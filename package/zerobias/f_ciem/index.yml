@@ -1,0 +1,8 @@
+id: 9f05c576-f8b3-4e61-9e23-d9d466b85a40
+name: Cloud Infrastructure Entitlement Management (CIEM)
+description: Analyze cloud identities and entitlements, surface excessive and risky permissions, and enforce least privilege across cloud environments.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_ciem-compliance_feature.svg
+code: f_ciem
+externalId: Cloud Infrastructure Entitlement Management
+tags: []
+aliases: []
