@@ -1,0 +1,28 @@
+{
+  "name": "@zerobias-org/compliance_feature-zerobias-f_aicg",
+  "version": "1.0.0",
+  "description": "AI Code Generation compliance_feature artifact",
+  "author": "ctamas@zerobias.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zerobias-org/compliance_feature.git",
+    "directory": "package/zerobias/f_aicg/"
+  },
+  "publishConfig": {
+    "registry": "https://pkg.zerobias.org/"
+  },
+  "files": [
+    "index.yml",
+    "elements.yml"
+  ],
+  "dependencies": {
+    "@auditlogic/vendor-zerobias": "latest"
+  },
+  "zerobias": {
+    "dataloader-version": "1.0.0",
+    "import-artifact": "compliance_feature",
+    "package": "zerobias.f_aicg.compliance_feature"
+  },
+  "type": "module"
+}
