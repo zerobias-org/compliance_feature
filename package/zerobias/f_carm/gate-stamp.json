@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0-uat.0",
+  "version": "2.0.1",
   "branch": "feat/github-feature-controls",
   "sourceHash": "daa696d9de36d1f0895fbd7419ab2b164a00ecd8bd0f9fb4a739754288055518",
   "testHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
