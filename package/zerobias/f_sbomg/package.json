@@ -1,0 +1,28 @@
+{
+  "name": "@zerobias-org/compliance_feature-zerobias-f_sbomg",
+  "version": "1.0.0",
+  "description": "Software Bill of Materials (SBOM) Generation compliance_feature artifact",
+  "author": "ctamas@zerobias.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zerobias-org/compliance_feature.git",
+    "directory": "package/zerobias/f_sbomg/"
+  },
+  "publishConfig": {
+    "registry": "https://pkg.zerobias.org/"
+  },
+  "files": [
+    "index.yml",
+    "elements.yml"
+  ],
+  "dependencies": {
+    "@auditlogic/vendor-zerobias": "latest"
+  },
+  "zerobias": {
+    "dataloader-version": "1.0.0",
+    "import-artifact": "compliance_feature",
+    "package": "zerobias.f_sbomg.compliance_feature"
+  },
+  "type": "module"
+}

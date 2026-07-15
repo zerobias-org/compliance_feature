@@ -1,0 +1,8 @@
+id: 4d8b0004-06e7-48c9-b5df-2c3755cd05fe
+name: Software Bill of Materials (SBOM) Generation
+description: Produce a machine-readable inventory (e.g. SPDX, CycloneDX) of all components and dependencies in a software artifact.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_sbomg-compliance_feature.svg
+code: f_sbomg
+externalId: Software Bill of Materials Generation
+tags: []
+aliases: []
