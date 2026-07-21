@@ -1,3 +1,5 @@
 elements:
   - standardAlias: scf_2026_1_1
     elementAlias: AAT-01
+  - standardAlias: scf_2025_2_1
+    elementAlias: AAT-01
