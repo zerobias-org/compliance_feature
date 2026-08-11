@@ -457,7 +457,7 @@ npm run nx:publish
 - **[ContentArtifacts.md](../../ContentArtifacts.md)** - Content catalog system
 - **[zerobias-org/product/CLAUDE.md](../product/CLAUDE.md)** - Product definitions
 - **[zerobias-org/segment/CLAUDE.md](../segment/CLAUDE.md)** - Product segments
-- **[auditmation/platform/dataloader/CLAUDE.md](../../auditmation/platform/dataloader/CLAUDE.md)** - Dataloader import
+- **[com/platform/dataloader/CLAUDE.md](../../com/platform/dataloader/CLAUDE.md)** - Dataloader import
 - **[README.md](README.md)** - Repository overview
 - **[Conventional Commits](https://www.conventionalcommits.org/)** - Commit message format
 
