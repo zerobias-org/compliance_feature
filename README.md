@@ -205,3 +205,20 @@ The footer should contain any information about **Breaking Changes** if not prov
 
 **Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines.
 A description of the change should always follow.
+
+## Prerequisites — GitHub token with `read:packages`
+
+Required before **any** gradle / `zbb` command (compile, validation, tests,
+`gate`, publish): the `zb.*` gradle plugins resolve from GitHub Packages
+Maven, which refuses anonymous reads even though `com.zerobias.build-tools`
+is public. Nothing needs granting to you and no org membership is involved —
+but **being logged in to `gh` is not enough, the scope is separate**:
+
+```bash
+gh auth status 2>&1 | grep -q 'read:packages' && echo OK || echo 'MISSING read:packages'
+gh auth refresh -s read:packages && export GITHUB_TOKEN=$(gh auth token)   # the fix
+```
+
+Without it the build fails on its first request with a 401 /
+`Plugin [id: 'zb.workspace'] was not found`, before any package file is read.
+See `CLAUDE.md` for the full note.
