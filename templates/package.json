@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/compliance_feature-zerobias-{code}",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "{name} compliance feature artifact.",
   "author": "team@zerobias.com",
   "license": "ISC",
@@ -23,6 +23,7 @@
   "zerobias": {
     "dataloader-version": "1.0.0",
     "import-artifact": "compliance_feature",
-    "package": "zerobias.{code}.compliance_feature"
+    "package": "zerobias.{code}.compliance_feature",
+    "orgId": "{target-org-uuid}"
   }
 }
