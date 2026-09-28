@@ -1,7 +1,7 @@
 {
   "version": "2.0.0-uat.0",
-  "branch": "chore/bootstrap-gradle-zbb",
-  "sourceHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "branch": "build/npmrc-canonical",
+  "sourceHash": "87dc7be6a6e665687e5722608483995a27f56c710aec9021d08ba68e08b681f3",
   "testHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "tasks": {
     "validate": "passed",
