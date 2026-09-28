@@ -42,7 +42,7 @@ plugins { id("zb.typescript-collectorbot") } // collectorbot
 ```
 
 ### 2. Ensure `.npmrc`
-If `<package>/.npmrc` doesn't exist, copy from a sibling already-migrated package (or from the repo root). Validators require it.
+`<package>/.npmrc` must be byte-identical to the repo-root `.npmrc`: `cp .npmrc <package>/.npmrc` (never from a sibling — siblings may be stale). Validators require it. Set every `dependencies` spec to `"*"` (not `"latest"`), then regenerate `<package>/npm-shrinkwrap.json` with zero `"resolved"` entries — `npm install --package-lock-only --no-workspaces && mv package-lock.json npm-shrinkwrap.json` inside the package (never `npm shrinkwrap`: ENOWORKSPACES) — and make sure it is listed in `package.json` `files[]`. `git add` all of it BEFORE the gate (untracked files are invisible to the stamp's `sourceHash`).
 
 ### 3. Run **full** `:gate` (NOT just `:validateContent`)
 ```bash
