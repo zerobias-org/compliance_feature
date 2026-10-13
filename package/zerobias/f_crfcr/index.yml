@@ -1,0 +1,8 @@
+id: 2fab9a44-7647-4010-944f-f7c330c87a83
+name: Code Review (Code Repositories)
+description: Structured peer review of proposed changes (pull/merge requests) with approvals, comments, and enforceable review policies before merge.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_crfcr-compliance_feature.svg
+code: f_crfcr
+externalId: Code Review
+tags: []
+aliases: []
