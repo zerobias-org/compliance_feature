@@ -1,7 +1,7 @@
 {
-  "version": "2.0.1",
-  "branch": "build/npmrc-canonical",
-  "sourceHash": "1989ea6d38884679d443e29c9071455f89c61829fca9674da3cca6a1f6c50bf4",
+  "version": "2.0.0-uat.0",
+  "branch": "feat/github-feature-controls",
+  "sourceHash": "5b78d9fbf4f3e789097e46196c6c378d36c7ee09acfdd1117a8f37c15362115a",
   "testHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "tasks": {
     "validate": "passed",

@@ -10,15 +10,14 @@
     "directory": "package/zerobias/f_sbomg/"
   },
   "publishConfig": {
-    "registry": "https://pkg.zerobias.org"
+    "registry": "https://pkg.zerobias.org/"
   },
   "files": [
-    "elements.yml",
     "index.yml",
-    "npm-shrinkwrap.json"
+    "elements.yml"
   ],
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "*"
+    "@auditlogic/vendor-zerobias": "latest"
   },
   "zerobias": {
     "dataloader-version": "1.0.0",
