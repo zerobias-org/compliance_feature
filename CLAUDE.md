@@ -59,7 +59,8 @@ package/zerobias/f_2fa/
 ├── index.yml                  # Feature metadata
 ├── elements.yml               # Linked compliance requirements
 ├── package.json               # NPM package definition
-├── npm-shrinkwrap.json        # Locked dependencies
+├── npm-shrinkwrap.json        # Locked dependencies — shipped (in files[]), no `resolved` URLs
+├── .npmrc                     # Byte-identical copy of the repo-root .npmrc (never hand-written)
 └── CHANGELOG.md               # Version history
 ```
 
@@ -111,11 +112,12 @@ elements:
     "directory": "package/zerobias/f_2fa/"
   },
   "publishConfig": {
-    "registry": "https://pkg.zerobias.org/"
+    "registry": "https://pkg.zerobias.org"
   },
   "files": [
     "index.yml",
-    "elements.yml"
+    "elements.yml",
+    "npm-shrinkwrap.json"
   ],
   "auditmation": {
     "dataloader-version": "4.0.31",
@@ -123,10 +125,14 @@ elements:
     "package": "zerobias.f_2fa.compliance_feature"
   },
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "latest"
+    "@auditlogic/vendor-zerobias": "*"
   }
 }
 ```
+
+Dependency specs are `"*"`, never `"latest"` or a `^` range: the shipped
+`npm-shrinkwrap.json` pins the version, `npm ci` accepts any pin under `*`,
+and a fresh resolve follows `NPM_CONFIG_TAG` / `latest`.
 
 ## Naming Conventions
 
@@ -221,17 +227,20 @@ elements:
   "description": "Single Sign-On (SSO) compliance_feature artifact.",
   ...
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "latest"
+    "@auditlogic/vendor-zerobias": "*"
   }
 }
 ```
 
-**7. Install and shrinkwrap:**
+**7. `.npmrc` and shrinkwrap:**
 ```bash
+cp .npmrc package/zerobias/f_sso/.npmrc        # byte-identical copy of the root file
 cd package/zerobias/f_sso
-npm install
-npm shrinkwrap
+npm install --package-lock-only --no-workspaces && mv package-lock.json npm-shrinkwrap.json
+grep -c '"resolved"' npm-shrinkwrap.json          # must print 0
 ```
+(`npm shrinkwrap` fails with ENOWORKSPACES; refresh later with
+`npm update --package-lock-only --no-workspaces`.)
 
 **8. Validate:**
 ```bash
@@ -376,11 +385,8 @@ npm run lerna:publish
 ```bash
 cd package/zerobias/f_2fa
 
-# Install dependencies
-npm install
-
-# Create shrinkwrap
-npm shrinkwrap
+# Regenerate the shipped, URL-free shrinkwrap (never `npm shrinkwrap`)
+npm install --package-lock-only --no-workspaces && mv package-lock.json npm-shrinkwrap.json
 
 # Validate feature
 npm run validate

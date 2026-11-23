@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-uat.0",
-  "branch": "feat/github-feature-controls",
-  "sourceHash": "f1f1a08b2147b17b746e5f22f4fd0fd3380668e2af1add657d024904f4f42c3b",
+  "branch": "feat/promote-github-features",
+  "sourceHash": "4d1d47cc1403e857cfef67fc9e47dca4cc9c67b2e3693ae0b51154fab58d5106",
   "testHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "tasks": {
     "validate": "passed",

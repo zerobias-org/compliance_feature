@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/compliance_feature-zerobias-f_ddt",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Data-Driven Testing compliance_feature artifact",
   "author": "opignault@zerobias.com",
   "license": "ISC",
@@ -10,14 +10,15 @@
     "directory": "package/zerobias/f_ddt/"
   },
   "publishConfig": {
-    "registry": "https://pkg.zerobias.org/"
+    "registry": "https://pkg.zerobias.org"
   },
   "files": [
+    "elements.yml",
     "index.yml",
-    "elements.yml"
+    "npm-shrinkwrap.json"
   ],
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "latest"
+    "@auditlogic/vendor-zerobias": "*"
   },
   "zerobias": {
     "dataloader-version": "1.0.0",

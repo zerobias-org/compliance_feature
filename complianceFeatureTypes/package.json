@@ -13,7 +13,7 @@
     "nx:publish": "../scripts/publish.sh"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://pkg.zerobias.org"
   },
   "files": [
     "index.yml"
@@ -24,6 +24,6 @@
     "package": "zerobias.compliance_feature_type"
   },
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "^1.0.0"
+    "@auditlogic/vendor-zerobias": "*"
   }
 }
