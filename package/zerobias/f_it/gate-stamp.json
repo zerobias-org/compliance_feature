@@ -1,8 +1,9 @@
 {
-  "version": "2.0.0-uat.0",
-  "branch": "feat/github-feature-controls",
-  "sourceHash": "01779a53ebee60e4cc333c1f6790841353c1fbf13a4f6e2910e7d8f1c6f7004d",
+  "version": "2.0.1-dev.0",
+  "branch": "dev",
+  "sourceHash": "d025760570c1d47c1182eab208246b266f8da2422733437216d3d095ea3f8f43",
   "testHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "dataloaderEnv": "dev",
   "tasks": {
     "validate": "passed",
     "lint": "passed",
@@ -11,7 +12,8 @@
     "testDirect": "passed",
     "testDocker": "passed",
     "testDataloader": "passed",
-    "buildArtifacts": "passed"
+    "buildArtifacts": "passed",
+    "dataloaderExec": "passed"
   },
   "tests": {
       "unit": { "expected": 0, "ran": 0, "status": "skipped" },
