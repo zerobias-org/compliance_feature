@@ -1,0 +1,8 @@
+id: 2987d83c-3b73-4d70-80f5-b8dbef2f0149
+name: Data Security Posture Management (DSPM)
+description: Discover and classify sensitive data across cloud environments, and detect data risks, exposure, and data attack paths. Includes data detection and response (DDR) for anomalous access to sensitive data.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_dspm-compliance_feature.svg
+code: f_dspm
+externalId: Data Security Posture Management
+tags: []
+aliases: []

@@ -1,0 +1,8 @@
+id: 6a635a93-2902-456e-989e-a004abf9c429
+name: AI Security Posture Management (AI-SPM)
+description: Secure AI models, training data, pipelines, and services. Build an AI bill of materials (AI-BOM) and detect AI misconfigurations and risks across AI infrastructure.
+imageUrl: https://cdn.auditmation.io/logos/zerobias-f_aispm-compliance_feature.svg
+code: f_aispm
+externalId: AI Security Posture Management
+tags: []
+aliases: []
