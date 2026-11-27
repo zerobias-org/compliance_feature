@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/compliance_feature-zerobias-f_dspm",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "Data Security Posture Management (DSPM) compliance feature artifact.",
   "author": "team@zerobias.com",
   "license": "ISC",
@@ -10,14 +10,15 @@
     "directory": "package/zerobias/f_dspm/"
   },
   "publishConfig": {
-    "registry": "https://pkg.zerobias.org/"
+    "registry": "https://pkg.zerobias.org"
   },
   "files": [
+    "elements.yml",
     "index.yml",
-    "elements.yml"
+    "npm-shrinkwrap.json"
   ],
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "latest"
+    "@auditlogic/vendor-zerobias": "*"
   },
   "type": "module",
   "zerobias": {
